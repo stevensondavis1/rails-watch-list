@@ -1,0 +1,11 @@
+<h1>Add a new list</h1>
+<div class="container">
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.submit "Add List", class: "btn btn-warning" %>
+  <% end %>
+
+  <%= link_to root_path, class:"btn btn-warning mt-3" do  %>
+    <i class="fa-solid fa-house"></i>
+  <% end %>
+</div>
